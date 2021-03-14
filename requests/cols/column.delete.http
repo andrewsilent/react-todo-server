@@ -1,0 +1,1 @@
+DELETE http://localhost:3001/column/1615731459841 HTTP/1.1

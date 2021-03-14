@@ -1,0 +1,7 @@
+PUT http://localhost:3001/column/1615727659390 HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "1615727659390",
+  "title": "updated column"
+}
