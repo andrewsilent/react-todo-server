@@ -1,7 +1,9 @@
 const express = require('express')
 const TaskController = require('./controllers/task.controller')
 const ColumnController = require('./controllers/column.controller')
+const TaskboardController = require('./controllers/taskboard.controller')
 const deleteTasksByColumn = require('./middleware/deleteTasksByColumn.mw')
+
 const app = express()
 
 const bodyParser = express.json()
@@ -10,6 +12,8 @@ const bodyParser = express.json()
 app.get('/', (req, res, next) => {
   res.status('200').send('welcome, yeah')
 })
+
+app.get('/taskboard', bodyParser, TaskboardController.findAll)
 
 app.get('/tasks', bodyParser, TaskController.findAll)
 app.post('/task/create', bodyParser, TaskController.createTask)
