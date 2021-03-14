@@ -1,0 +1,7 @@
+POST http://localhost:3001/task/create HTTP/1.1
+Content-Type: application/json
+
+{
+  "column": "1615731465573",
+  "title": "task 3 col 2"
+}

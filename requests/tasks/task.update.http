@@ -1,0 +1,9 @@
+PUT http://localhost:3001/task/1615706117724 HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "1615706117724",
+  "column": "321",
+  "title": "updated task",
+  "isDone": true
+}
